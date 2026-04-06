@@ -27,6 +27,10 @@ The sketch is meant as a **compact learning artifact**: how BLE AD structures wo
 3. Choose the correct serial port and **Upload**.
 4. Optionally open the **Serial Monitor** at **115200** baud.
 
+## Utilities
+
+Separate **Arduino sketches** (BLE scan, Wi‑Fi scan, simple HTTP GET) live under [`utilities/`](utilities/). See [`utilities/README.md`](utilities/README.md). They are **not** Python; they target the same XIAO ESP32 boards.
+
 ## Customization
 
 - **`NAMES[]`** — Lines used for the BLE **Complete Local Name** in scan response. Keep each entry **≤ 29 ASCII characters** so it fits a typical 31-byte scan-response payload with overhead.
